@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Imarah.tech" version="24.7.17">
+  <diagram id="flows-inspection-flow" name="From a surface photo to a reviewable report">
+    <mxGraphModel dx="1120" dy="830" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1120" pageHeight="830" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="From a surface photo to a reviewable report" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontColor=#294837;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="18" width="1050" height="36" />
+        </mxCell>
+        <mxCell id="subtitle" value="The demo never substitutes a failed live detector. A VLM failure preserves detector evidence." style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#294837;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="58" width="1050" height="35" />
+        </mxCell>
+        <mxCell id="photo" value="Choose or capture image&#10;Add name and location" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#7e8975;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="125" width="235" height="80" />
+        </mxCell>
+        <mxCell id="validate" value="Validate &amp; re-encode&#10;10 MB · 20 MP · JPEG/PNG/WebP" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="380" y="125" width="265" height="80" />
+        </mxCell>
+        <mxCell id="reject" value="Invalid input&#10;Show an actionable error" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fbf1df;strokeColor=#987844;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="125" width="260" height="80" />
+        </mxCell>
+        <mxCell id="demo" value="Demo mode&#10;Selected VLM only&#10;No detector overlay" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fbf1df;strokeColor=#987844;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="320" width="250" height="90" />
+        </mxCell>
+        <mxCell id="mode" value="Select detector mode&#10;Save image + queue job" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="390" y="320" width="255" height="90" />
+        </mxCell>
+        <mxCell id="live" value="Live YOLO segmentation&#10;Validate boxes + crack outlines&#10;Failure → failed job" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="320" width="270" height="90" />
+        </mxCell>
+        <mxCell id="vlm" value="Local or VPS VLM observation&#10;Read actual image&#10;Live detections add context" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="380" y="500" width="265" height="95" />
+        </mxCell>
+        <mxCell id="report" value="Save draft + crack outlines&#10;If VLM fails: partial report&#10;No generated safety rating" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="765" y="500" width="280" height="95" />
+        </mxCell>
+        <mxCell id="review" value="Human reviews the evidence&#10;Record notes · export / print" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#7e8975;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="380" y="685" width="265" height="85" />
+        </mxCell>
+        <mxCell id="edge-0" value="upload" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="photo" target="validate">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-1" value="invalid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="validate" target="reject">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-2" value="valid" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="validate" target="mode">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-3" value="demo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="mode" target="demo">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-4" value="live" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="mode" target="live">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-5" value="image only" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="demo" target="vlm">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-6" value="image + detections" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="live" target="vlm">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-7" value="raw text / error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="vlm" target="report">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-8" value="review" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="report" target="review">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,56 @@
+{
+  "purpose": "Restore previously discarded outlines only when the source image and original ordered detector boxes/confidences match. Existing VLM text, timings, reviewer notes and original detector timings are preserved.",
+  "created_at": "2026-09-19T21:24:59.545408+00:00",
+  "records": [
+    {
+      "inspection_id": "89e03205542b45e1",
+      "submitted_sha256": "03191ad105cd7bf4982a39d61e2204de2ce576a3ed7596ded36faacbf1a91e41",
+      "source": {
+        "kind": "authenticated detector replay on the original saved JPEG",
+        "replay_latency_ms": 6109
+      },
+      "ordered_boxes_and_confidences_match": true,
+      "restored": true,
+      "polygon_point_counts": [
+        128,
+        98,
+        20,
+        295,
+        247,
+        101
+      ]
+    },
+    {
+      "inspection_id": "ecd9672320f14d29",
+      "submitted_sha256": "ef2a700102b03a9c55cf5ec1f1ae10295d7845a7c67e1ad338613cfd7f00c976",
+      "source": {
+        "kind": "preserved endpoint response",
+        "file": "docs/evaluation/yolo-live-check.json",
+        "file_sha256": "7d3d31590cac96ac9fdad2973a80df56733514d8d46f04f7188429f1c0ea79f0"
+      },
+      "ordered_boxes_and_confidences_match": true,
+      "restored": true,
+      "polygon_point_counts": [
+        650,
+        1469,
+        850
+      ]
+    },
+    {
+      "inspection_id": "7faf63605aee492e",
+      "submitted_sha256": "ef2a700102b03a9c55cf5ec1f1ae10295d7845a7c67e1ad338613cfd7f00c976",
+      "source": {
+        "kind": "preserved endpoint response",
+        "file": "docs/evaluation/yolo-live-check.json",
+        "file_sha256": "7d3d31590cac96ac9fdad2973a80df56733514d8d46f04f7188429f1c0ea79f0"
+      },
+      "ordered_boxes_and_confidences_match": true,
+      "restored": true,
+      "polygon_point_counts": [
+        650,
+        1469,
+        850
+      ]
+    }
+  ]
+}

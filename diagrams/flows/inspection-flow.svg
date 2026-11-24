@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 830" role="img">
+  <!--Use: project flow preview. Copyright (c) 2026 Imarah.tech. All rights reserved.-->
+  <title>From a surface photo to a reviewable report</title>
+  <rect width="1120" height="830" fill="#f8faf5" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#85947c" />
+    </marker>
+  </defs>
+  <text font-family="Arial, sans-serif" font-size="24" text-anchor="start" font-weight="bold" x="35" y="47" fill="#294837">From a surface photo to a reviewable report</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" x="35" y="77" fill="#6c7f60">The demo never substitutes a failed live detector. A VLM failure preserves detector evidence.</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M275 165.0 L380 165.0" fill="none" stroke="#85947c" />
+  <rect x="304.3" y="146.0" width="46.400000000000006" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="327.5" y="158.0" fill="#6c7f60">upload</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M645 165.0 L770 165.0" fill="none" stroke="#85947c" />
+  <rect x="681.1" y="146.0" width="52.800000000000004" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="707.5" y="158.0" fill="#6c7f60">invalid</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M512.5 205 L517.5 320" fill="none" stroke="#85947c" />
+  <rect x="495.0" y="243.5" width="40.0" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="515.0" y="255.5" fill="#6c7f60">valid</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M390 365.0 L290 365.0" fill="none" stroke="#85947c" />
+  <rect x="323.2" y="346.0" width="33.6" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="340.0" y="358.0" fill="#6c7f60">demo</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M645 365.0 L770 365.0" fill="none" stroke="#85947c" />
+  <rect x="690.7" y="346.0" width="33.6" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="707.5" y="358.0" fill="#6c7f60">live</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M165.0 410 L512.5 500" fill="none" stroke="#85947c" />
+  <rect x="302.75" y="436.0" width="72.0" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="338.75" y="448.0" fill="#6c7f60">image only</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M905.0 410 L512.5 500" fill="none" stroke="#85947c" />
+  <rect x="647.15" y="436.0" width="123.2" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="708.75" y="448.0" fill="#6c7f60">image + detections</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M645 547.5 L765 547.5" fill="none" stroke="#85947c" />
+  <rect x="649.8" y="528.5" width="110.4" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="705.0" y="540.5" fill="#6c7f60">raw text / error</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M905.0 595 L512.5 685" fill="none" stroke="#85947c" />
+  <rect x="685.55" y="621.0" width="46.400000000000006" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="708.75" y="633.0" fill="#6c7f60">review</text>
+  <rect x="40" y="125" width="235" height="80" rx="8" fill="#ffffff" stroke="#7e8975" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="157.5" y="160.0" fill="#294837">Choose or capture image</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="157.5" y="178.0" fill="#294837">Add name and location</text>
+  <rect x="380" y="125" width="265" height="80" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="512.5" y="160.0" fill="#294837">Validate &amp; re-encode</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="512.5" y="178.0" fill="#294837">10 MB · 20 MP · JPEG/PNG/WebP</text>
+  <rect x="770" y="125" width="260" height="80" rx="8" fill="#fbf1df" stroke="#987844" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="900.0" y="160.0" fill="#294837">Invalid input</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="900.0" y="178.0" fill="#294837">Show an actionable error</text>
+  <rect x="40" y="320" width="250" height="90" rx="8" fill="#fbf1df" stroke="#987844" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="165.0" y="351.0" fill="#294837">Demo mode</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="165.0" y="369.0" fill="#294837">Selected VLM only</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="165.0" y="387.0" fill="#294837">No detector overlay</text>
+  <rect x="390" y="320" width="255" height="90" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="517.5" y="360.0" fill="#294837">Select detector mode</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="517.5" y="378.0" fill="#294837">Save image + queue job</text>
+  <rect x="770" y="320" width="270" height="90" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="905.0" y="351.0" fill="#294837">Live YOLO segmentation</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="905.0" y="369.0" fill="#294837">Validate boxes + crack outlines</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="905.0" y="387.0" fill="#294837">Failure → failed job</text>
+  <rect x="380" y="500" width="265" height="95" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="512.5" y="533.5" fill="#294837">Local or VPS VLM observation</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="512.5" y="551.5" fill="#294837">Read actual image</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="512.5" y="569.5" fill="#294837">Live detections add context</text>
+  <rect x="765" y="500" width="280" height="95" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="905.0" y="533.5" fill="#294837">Save draft + crack outlines</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="905.0" y="551.5" fill="#294837">If VLM fails: partial report</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="905.0" y="569.5" fill="#294837">No generated safety rating</text>
+  <rect x="380" y="685" width="265" height="85" rx="8" fill="#ffffff" stroke="#7e8975" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="512.5" y="722.5" fill="#294837">Human reviews the evidence</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="512.5" y="740.5" fill="#294837">Record notes · export / print</text>
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="start" font-weight="normal" x="35" y="809" fill="#87947b">Imarah.tech · Phase 1 · September 2026 · Edit the paired .drawio file in diagrams.net</text>
+</svg>

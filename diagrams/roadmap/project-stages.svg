@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img">
+  <!--Use: project flow preview. Copyright (c) 2026 Imarah.tech. All rights reserved.-->
+  <title>Imarah.tech — staged delivery</title>
+  <rect width="1120" height="740" fill="#f8faf5" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#85947c" />
+    </marker>
+  </defs>
+  <text font-family="Arial, sans-serif" font-size="24" text-anchor="start" font-weight="bold" x="35" y="47" fill="#294837">Imarah.tech — staged delivery</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" x="35" y="77" fill="#6c7f60">Dates follow the proposal; September adds an early demo. FYP-II dates remain tentative.</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M500 172.5 L620 172.5" fill="none" stroke="#85947c" />
+  <rect x="498.4" y="153.5" width="123.2" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="560.0" y="165.5" fill="#6c7f60">develop + evaluate</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M840.0 220 L840.0 340" fill="none" stroke="#85947c" />
+  <rect x="788.0" y="261.0" width="104.0" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="840.0" y="273.0" fill="#6c7f60">integrate first</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M620 387.5 L500 387.5" fill="none" stroke="#85947c" />
+  <rect x="520.8" y="368.5" width="78.4" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="560.0" y="380.5" fill="#6c7f60">next module</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M280.0 435 L565.0 555" fill="none" stroke="#85947c" />
+  <rect x="354.5" y="476.0" width="136.0" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="422.5" y="488.0" fill="#6c7f60">integrate + evaluate</text>
+  <rect x="60" y="125" width="440" height="95" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="280.0" y="158.5" fill="#294837">01 · September 2026</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="280.0" y="176.5" fill="#294837">Foundation and evaluation demo</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="280.0" y="194.5" fill="#294837">PWA · small VLMs · documentation</text>
+  <rect x="620" y="125" width="440" height="95" rx="8" fill="#eaf0f3" stroke="#526c7a" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="840.0" y="158.5" fill="#294837">02 · October–December 2026</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="840.0" y="176.5" fill="#294837">Building health assessment</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="840.0" y="194.5" fill="#294837">YOLO + validated VLM reports</text>
+  <rect x="620" y="340" width="440" height="95" rx="8" fill="#fbf1df" stroke="#987844" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="840.0" y="373.5" fill="#294837">03 · January–February 2027</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="840.0" y="391.5" fill="#294837">Construction site management</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="840.0" y="409.5" fill="#294837">Workers · attendance · PPE · materials</text>
+  <rect x="60" y="340" width="440" height="95" rx="8" fill="#fbf1df" stroke="#987844" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="280.0" y="373.5" fill="#294837">04 · March–April 2027</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="280.0" y="391.5" fill="#294837">Building monitoring</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="280.0" y="409.5" fill="#294837">Sensor prototype · weather context</text>
+  <rect x="335" y="555" width="460" height="105" rx="8" fill="#fbf1df" stroke="#987844" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="565.0" y="593.5" fill="#294837">05 · April–May 2027</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="565.0" y="611.5" fill="#294837">Urban analysis and final evaluation</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="565.0" y="629.5" fill="#294837">Geospatial processing · integration · defense</text>
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="start" font-weight="normal" x="35" y="719" fill="#87947b">Imarah.tech · Phase 1 · September 2026 · Edit the paired .drawio file in diagrams.net</text>
+</svg>

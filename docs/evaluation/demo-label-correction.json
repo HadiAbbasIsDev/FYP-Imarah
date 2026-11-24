@@ -1,0 +1,50 @@
+{
+  "corrected_at": "2026-09-19T20:37:17.808045+00:00",
+  "purpose": "Correct only demo detector wording for reports that have zero regions. Model responses, measurements and boxes are unchanged.",
+  "changes": [
+    {
+      "inspection_id": "74fdaf7ed0e94b69",
+      "before": {
+        "source": "Human-marked demo region",
+        "note": "Illustrative regions only. The trained YOLO endpoint has not been supplied."
+      },
+      "after": {
+        "source": "No detector used",
+        "note": "The trained detector was not used. No illustrative regions were provided for this photograph."
+      }
+    },
+    {
+      "inspection_id": "2d299066976340c9",
+      "before": {
+        "source": "Human-marked demo region",
+        "note": "Illustrative regions only. The trained YOLO endpoint has not been supplied."
+      },
+      "after": {
+        "source": "No detector used",
+        "note": "The trained detector was not used. No illustrative regions were provided for this photograph."
+      }
+    },
+    {
+      "inspection_id": "1fa0167331d04935",
+      "before": {
+        "source": "No detector used",
+        "note": "Illustrative regions only. The trained YOLO endpoint has not been supplied."
+      },
+      "after": {
+        "source": "No detector used",
+        "note": "The trained detector was not used. No illustrative regions were provided for this photograph."
+      }
+    },
+    {
+      "inspection_id": "a97d8885178344ae",
+      "before": {
+        "source": "Human-marked demo region",
+        "note": "Illustrative regions only. The trained YOLO endpoint has not been supplied."
+      },
+      "after": {
+        "source": "No detector used",
+        "note": "The trained detector was not used. No illustrative regions were provided for this photograph."
+      }
+    }
+  ]
+}

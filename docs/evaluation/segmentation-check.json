@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-09-19T21:27:15.866578+00:00",
+  "purpose": "Verify real saved crack polygons, display controls, exports and a fresh live inspection. Legacy/mixed overlay cases use browser-only response fixtures.",
+  "restored_ids": [
+    "89e03205542b45e1",
+    "ecd9672320f14d29",
+    "7faf63605aee492e"
+  ],
+  "new_inspection_id": "b9217a60769847da",
+  "new_detector_ms": 1606,
+  "new_vlm_ms": 11019,
+  "new_polygon_point_counts": [
+    650,
+    1469,
+    850
+  ],
+  "console_errors": [],
+  "accessibility_violations": 0,
+  "checks": [
+    "Restored 89e03205542b45e1: default polygons match the saved endpoint coordinates exactly.",
+    "Restored ecd9672320f14d29: default polygons match the saved endpoint coordinates exactly.",
+    "Restored 7faf63605aee492e: default polygons match the saved endpoint coordinates exactly.",
+    "Outline/box selector and hide/show controls work.",
+    "JSON export retains all six predicted polygons and original report data.",
+    "Segmentation report has zero selected accessibility-rule violations.",
+    "Image and overlay align at 390px/768px with no page overflow; PDF and screenshots saved.",
+    "Browser-only legacy fixture keeps real boxes and explains missing outlines.",
+    "Browser-only mixed fixture renders available outlines and an explicit box fallback.",
+    "Fresh real inspection saves and displays three outlines; VLM receives concise box context; report remains unreviewed."
+  ],
+  "verification": {
+    "backend_tests_passed": 84,
+    "ruff": "passed",
+    "frontend_build": "passed",
+    "general_browser_checks_passed": 18,
+    "general_browser_accessibility_violations": 0,
+    "restoration_preserves_original_fields": true,
+    "drawio_pairs_valid": 6,
+    "credential_not_in_git_visible_files": true,
+    "pending_jobs": 0
+  }
+}

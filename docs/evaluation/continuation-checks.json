@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-09-19T20:42:08.379834+00:00",
+  "local_date": "20 September 2026 \u00b7 Asia/Karachi",
+  "phase": "September 2026 \u00b7 Phase 1 continuation",
+  "server_url": "http://127.0.0.1:8000",
+  "api_tests_passed": 62,
+  "frontend_build": "passed",
+  "python_ruff": "passed",
+  "live_qwen2_browser_checks_passed": 19,
+  "final_interface_browser_checks_passed": 18,
+  "automated_accessibility_violations": 0,
+  "completed_benchmark_experiments": 7,
+  "completed_vlm_benchmark_rows": 62,
+  "new_continuation_rows": 35,
+  "failed_benchmark_rows": 0,
+  "verified_image_hashes": true,
+  "verified_model_revisions_or_digests": true,
+  "installed_models": [
+    "smolvlm-256m",
+    "smolvlm-500m",
+    "qwen3-vl-2b",
+    "qwen3-vl-4b"
+  ],
+  "qwen_runtime_version": "0.34.2",
+  "prepared_qwen_inspections": {
+    "workflow_test_2b": "adfce8fe59f64e66",
+    "unreviewed_wall_4b": "74fdaf7ed0e94b69"
+  },
+  "trained_detector_configured": false,
+  "pending_jobs": 0,
+  "loaded_ollama_runners": 0,
+  "free_disk_gib": 16.49,
+  "local_document_links_checked": 111,
+  "limitations": [
+    "Trained YOLO endpoint details missing from the originally supplied saved file",
+    "No expert model-quality scoring, structural-safety validation or representative building dataset",
+    "Ollama model-process peak memory is unmeasured",
+    "Fresh-machine installation, other operating systems and real phone camera/PWA tests pending",
+    "Future workforce, sensor and urban screens still use simulated data"
+  ],
+  "valid_drawio_diagrams": 6,
+  "demo_detector_label_records_corrected": 4,
+  "wall_report_export_and_mobile_checks": "passed"
+}

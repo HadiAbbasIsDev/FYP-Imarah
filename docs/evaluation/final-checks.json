@@ -1,0 +1,26 @@
+{
+  "phase": "September 2026 \u00b7 Phase 1",
+  "server_url": "http://127.0.0.1:8000",
+  "api_tests_passed": 38,
+  "browser_checks_passed": 17,
+  "automated_accessibility_violations": 0,
+  "javascript_audit_vulnerabilities": 0,
+  "completed_vlm_benchmark_rows": 27,
+  "installed_models": [
+    "smolvlm-256m",
+    "smolvlm-500m"
+  ],
+  "prepared_inspection_ids": [
+    "a97d8885178344ae",
+    "c8660e267be74c1d"
+  ],
+  "detector_configured": false,
+  "free_disk_gib": 1.95,
+  "limitations": [
+    "Trained YOLO endpoint missing from supplied saved files",
+    "Original larger VLM shortlist not evaluated",
+    "No expert quality scoring or structural-safety validation",
+    "Future site, sensor and urban modules use simulated data",
+    "Real phone camera and installation tests pending"
+  ]
+}

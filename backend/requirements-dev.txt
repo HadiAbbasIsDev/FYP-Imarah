@@ -1,0 +1,7 @@
+# Use: the API tests and browser smoke checks used for Phase 1.
+# Copyright (c) 2026 Imarah.tech. All rights reserved.
+pytest==8.2.2
+playwright==1.54.0
+ruff==0.16.5
+# Optional for exporting the benchmark figure used in the evaluation notes.
+matplotlib==3.8.4

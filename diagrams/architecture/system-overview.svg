@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img">
+  <!--Use: project flow preview. Copyright (c) 2026 Imarah.tech. All rights reserved.-->
+  <title>Imarah.tech — the connected system</title>
+  <rect width="1120" height="740" fill="#f8faf5" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#85947c" />
+    </marker>
+  </defs>
+  <text font-family="Arial, sans-serif" font-size="24" text-anchor="start" font-weight="bold" x="35" y="47" fill="#294837">Imarah.tech — the connected system</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" x="35" y="77" fill="#6c7f60">Green: working September components. Amber: optional connections or planned modules.</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M260 182.5 L360 182.5" fill="none" stroke="#85947c" />
+  <rect x="274.0" y="163.5" width="72.0" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="310.0" y="175.5" fill="#6c7f60">HTTP / PWA</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M595 182.5 L730 182.5" fill="none" stroke="#85947c" />
+  <rect x="620.1" y="163.5" width="84.80000000000001" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="662.5" y="175.5" fill="#6c7f60">JSON + photo</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M860.0 225 L860.0 340" fill="none" stroke="#85947c" />
+  <rect x="843.2" y="263.5" width="33.6" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="860.0" y="275.5" fill="#6c7f60">save</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M860.0 225 L480.0 340" fill="none" stroke="#85947c" />
+  <rect x="618.0" y="263.5" width="104.0" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="670.0" y="275.5" fill="#6c7f60">background task</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M860.0 225 L157.5 340" fill="none" stroke="#85947c" />
+  <rect x="434.35" y="263.5" width="148.8" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="508.75" y="275.5" fill="#6c7f60">optional detector call</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M477.5 225 L570.0 555" fill="none" stroke="#85947c" />
+  <rect x="465.35" y="371.0" width="116.80000000000001" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="523.75" y="383.0" fill="#6c7f60">shared navigation</text>
+  <rect x="40" y="140" width="220" height="85" rx="8" fill="#ffffff" stroke="#7e8975" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="150.0" y="177.5" fill="#294837">Student / reviewer</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="150.0" y="195.5" fill="#294837">Desktop or mobile browser</text>
+  <rect x="360" y="140" width="235" height="85" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="477.5" y="177.5" fill="#294837">Progressive Web App</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="477.5" y="195.5" fill="#294837">React + TypeScript</text>
+  <rect x="730" y="140" width="260" height="85" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="860.0" y="177.5" fill="#294837">Local API</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="860.0" y="195.5" fill="#294837">FastAPI · single process</text>
+  <rect x="730" y="340" width="260" height="90" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="860.0" y="380.0" fill="#294837">SQLite + upload files</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="860.0" y="398.0" fill="#294837">Inspection history and jobs</text>
+  <rect x="365" y="340" width="230" height="90" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="480.0" y="380.0" fill="#294837">Selected VLM route</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="480.0" y="398.0" fill="#294837">Local workers / Qwen VPS</text>
+  <rect x="40" y="340" width="235" height="90" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="157.5" y="380.0" fill="#294837">Hosted YOLO segmentation</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="157.5" y="398.0" fill="#294837">Crack outlines + boxes</text>
+  <rect x="250" y="555" width="640" height="90" rx="8" fill="#fbf1df" stroke="#987844" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="570.0" y="586.0" fill="#294837">Future modules</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="570.0" y="604.0" fill="#294837">Construction site management · IoT monitoring · urban analysis</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="570.0" y="622.0" fill="#294837">Current pages use simulated data</text>
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="start" font-weight="normal" x="35" y="719" fill="#87947b">Imarah.tech · Phase 1 · September 2026 · Edit the paired .drawio file in diagrams.net</text>
+</svg>

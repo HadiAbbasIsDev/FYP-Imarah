@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Imarah.tech" version="24.7.17">
+  <diagram id="architecture-vps-qwen" name="Qwen on the shared VPS">
+    <mxGraphModel dx="1120" dy="770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1120" pageHeight="770" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Qwen on the shared VPS" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontColor=#294837;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="18" width="1050" height="36" />
+        </mxCell>
+        <mxCell id="subtitle" value="The PC reaches a private image API through SSH. Model files and logs stay on the data disk." style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#294837;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="58" width="1050" height="35" />
+        </mxCell>
+        <mxCell id="pc" value="Project PC&#10;Imarah VPS option / image client&#10;127.0.0.1:18084" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#7e8975;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="140" width="275" height="105" />
+        </mxCell>
+        <mxCell id="ssh" value="Authenticated SSH tunnel&#10;Encrypted connection to VPS&#10;Keep the PC terminal open" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf0f3;strokeColor=#526c7a;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="400" y="140" width="290" height="105" />
+        </mxCell>
+        <mxCell id="api" value="Qwen image API&#10;VPS 127.0.0.1:18084&#10;Validate image; return raw text" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="790" y="140" width="285" height="105" />
+        </mxCell>
+        <mxCell id="client" value="Response JSON&#10;Raw observation + model identity&#10;Actual settings and timings" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="365" width="275" height="115" />
+        </mxCell>
+        <mxCell id="engine" value="Dedicated Ollama engine&#10;VPS 127.0.0.1:11440&#10;One Qwen request at a time" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="790" y="365" width="285" height="115" />
+        </mxCell>
+        <mxCell id="runtime" value="Root filesystem: /opt/aiml&#10;Versioned Ollama executable&#10;Separate Python environment" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf0f3;strokeColor=#526c7a;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="400" y="565" width="290" height="115" />
+        </mxCell>
+        <mxCell id="weights" value="Data disk: /sdb-disk/AIML-Models&#10;VLM-models / named Qwen folder&#10;Weights, scripts, logs, README" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf0f3;strokeColor=#526c7a;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="755" y="565" width="345" height="115" />
+        </mxCell>
+        <mxCell id="projects" value="Separate project data&#10;/sdb-disk/projects/&lt;name&gt;&#10;SLMs folder reserved for later" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fbf1df;strokeColor=#987844;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="565" width="275" height="115" />
+        </mxCell>
+        <mxCell id="edge-0" value="photo + prompt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="pc" target="ssh">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-1" value="forward privately" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="ssh" target="api">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-2" value="vision request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="api" target="engine">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-3" value="read pinned model" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="engine" target="weights">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-4" value="run engine" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="engine" target="runtime">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-5" value="through the same tunnel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="api" target="client">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-6" value="future project integration" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="client" target="projects">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,45 @@
+# Use: run a dedicated Qwen model engine on loopback with model files on the data disk.
+# Copyright (c) 2026 Imarah.tech. All rights reserved.
+[Unit]
+Description=AIML Models - Qwen3-VL 4B Ollama runtime
+After=network-online.target
+Wants=network-online.target
+RequiresMountsFor=/sdb-disk
+
+[Service]
+Type=simple
+User=aiml-qwen
+Group=aiml-qwen
+RuntimeDirectory=aiml-qwen-ollama
+RuntimeDirectoryMode=0700
+Environment=OLLAMA_HOST=127.0.0.1:11440
+Environment=OLLAMA_MODELS=/sdb-disk/AIML-Models/VLM-models/qwen3-vl-4b-instruct-q4_k_m/models/ollama
+Environment=OLLAMA_MAX_LOADED_MODELS=1
+Environment=OLLAMA_NUM_PARALLEL=1
+Environment=OLLAMA_MAX_QUEUE=2
+Environment=OLLAMA_CONTEXT_LENGTH=4096
+Environment=OLLAMA_NO_CLOUD=1
+Environment=OLLAMA_NOPRUNE=1
+Environment=OLLAMA_FLASH_ATTENTION=0
+Environment=CUDA_VISIBLE_DEVICES=0
+WorkingDirectory=/sdb-disk/AIML-Models/VLM-models/qwen3-vl-4b-instruct-q4_k_m
+ExecStart=/opt/aiml/ollama/0.20.0/bin/ollama serve
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+MemoryMax=24G
+CPUQuota=800%
+TasksMax=512
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/sdb-disk/AIML-Models/VLM-models/qwen3-vl-4b-instruct-q4_k_m/logs
+ReadWritePaths=/sdb-disk/AIML-Models/VLM-models/qwen3-vl-4b-instruct-q4_k_m/models/ollama
+ReadWritePaths=/run/aiml-qwen-ollama
+StandardOutput=append:/sdb-disk/AIML-Models/VLM-models/qwen3-vl-4b-instruct-q4_k_m/logs/ollama.log
+StandardError=append:/sdb-disk/AIML-Models/VLM-models/qwen3-vl-4b-instruct-q4_k_m/logs/ollama.log
+
+[Install]
+WantedBy=multi-user.target

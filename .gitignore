@@ -1,0 +1,17 @@
+# Use: keep private settings, downloaded models and local runtime files out of Git.
+# Copyright (c) 2026 Imarah.tech. All rights reserved.
+.env
+.venv/
+node_modules/
+frontend/dist/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.tsbuildinfo
+*.pyc
+/data/
+models/*/
+*.log
+.runtime/
+docs/evaluation/screenshots/
+!data/.gitkeep

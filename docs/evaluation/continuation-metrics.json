@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-09-19T20:26:43.357919+00:00",
+  "purpose": "Measured runtime summaries; no quality or accuracy scoring",
+  "experiments": [
+    {
+      "id": "bench-18ea7c91bd83",
+      "status": "complete",
+      "prompt_version": "surface-observation-v1",
+      "repeats": 1,
+      "attempted": 4,
+      "failed": 0,
+      "models": [
+        {
+          "id": "qwen3-vl-2b",
+          "completed": 4,
+          "median_seconds": 72.9455,
+          "min_seconds": 65.516,
+          "max_seconds": 115.346,
+          "maximum_peak_rss_mib": null,
+          "unique_outputs_per_image": {
+            "cfd-001": 1,
+            "cfd-003": 1,
+            "synthetic-intact": 1,
+            "synthetic-crack": 1
+          },
+          "token_limit_hits": 0,
+          "median_prompt_eval_seconds": 66.323
+        }
+      ]
+    },
+    {
+      "id": "bench-7a7a204caa3c",
+      "status": "complete",
+      "prompt_version": "brief-caption-v2",
+      "repeats": 1,
+      "attempted": 4,
+      "failed": 0,
+      "models": [
+        {
+          "id": "qwen3-vl-2b",
+          "completed": 4,
+          "median_seconds": 141.1695,
+          "min_seconds": 131.422,
+          "max_seconds": 144.851,
+          "maximum_peak_rss_mib": null,
+          "unique_outputs_per_image": {
+            "cfd-001": 1,
+            "cfd-003": 1,
+            "synthetic-intact": 1,
+            "synthetic-crack": 1
+          },
+          "token_limit_hits": 0,
+          "median_prompt_eval_seconds": 130.694
+        }
+      ]
+    },
+    {
+      "id": "bench-4a6c0287dc5c",
+      "status": "complete",
+      "prompt_version": "surface-observation-v1",
+      "repeats": 2,
+      "attempted": 24,
+      "failed": 0,
+      "models": [
+        {
+          "id": "smolvlm-256m",
+          "completed": 8,
+          "median_seconds": 11.417,
+          "min_seconds": 9.048,
+          "max_seconds": 13.291,
+          "maximum_peak_rss_mib": 1970.3,
+          "unique_outputs_per_image": {
+            "cfd-001": 1,
+            "cfd-003": 1,
+            "synthetic-intact": 1,
+            "synthetic-crack": 1
+          },
+          "token_limit_hits": 0,
+          "median_prompt_eval_seconds": null
+        },
+        {
+          "id": "qwen3-vl-2b",
+          "completed": 8,
+          "median_seconds": 118.388,
+          "min_seconds": 106.355,
+          "max_seconds": 143.875,
+          "maximum_peak_rss_mib": null,
+          "unique_outputs_per_image": {
+            "cfd-001": 1,
+            "cfd-003": 1,
+            "synthetic-intact": 1,
+            "synthetic-crack": 1
+          },
+          "token_limit_hits": 0,
+          "median_prompt_eval_seconds": 105.939
+        },
+        {
+          "id": "qwen3-vl-4b",
+          "completed": 8,
+          "median_seconds": 175.129,
+          "min_seconds": 158.034,
+          "max_seconds": 184.576,
+          "maximum_peak_rss_mib": null,
+          "unique_outputs_per_image": {
+            "cfd-001": 1,
+            "cfd-003": 1,
+            "synthetic-intact": 1,
+            "synthetic-crack": 1
+          },
+          "token_limit_hits": 0,
+          "median_prompt_eval_seconds": 152.552
+        }
+      ]
+    },
+    {
+      "id": "bench-b5071a050702",
+      "status": "complete",
+      "prompt_version": "surface-observation-v1",
+      "repeats": 1,
+      "attempted": 3,
+      "failed": 0,
+      "models": [
+        {
+          "id": "smolvlm-256m",
+          "completed": 1,
+          "median_seconds": 9.615,
+          "min_seconds": 9.615,
+          "max_seconds": 9.615,
+          "maximum_peak_rss_mib": 1966.9,
+          "unique_outputs_per_image": {
+            "commons-wall-03": 1
+          },
+          "token_limit_hits": 0,
+          "median_prompt_eval_seconds": null
+        },
+        {
+          "id": "qwen3-vl-2b",
+          "completed": 1,
+          "median_seconds": 100.432,
+          "min_seconds": 100.432,
+          "max_seconds": 100.432,
+          "maximum_peak_rss_mib": null,
+          "unique_outputs_per_image": {
+            "commons-wall-03": 1
+          },
+          "token_limit_hits": 0,
+          "median_prompt_eval_seconds": 90.289
+        },
+        {
+          "id": "qwen3-vl-4b",
+          "completed": 1,
+          "median_seconds": 161.935,
+          "min_seconds": 161.935,
+          "max_seconds": 161.935,
+          "maximum_peak_rss_mib": null,
+          "unique_outputs_per_image": {
+            "commons-wall-03": 1
+          },
+          "token_limit_hits": 0,
+          "median_prompt_eval_seconds": 140.791
+        }
+      ]
+    }
+  ],
+  "timing_precision": "Seconds rounded to four decimals; raw worker measurements are retained as integer milliseconds in each experiment."
+}

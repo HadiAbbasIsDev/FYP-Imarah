@@ -1,0 +1,87 @@
+[
+  {
+    "id": "cfd-001",
+    "name": "Road surface \u00b7 branching crack",
+    "file": "crackforest-001.jpg",
+    "kind": "Research photograph \u00b7 road surface",
+    "description": "CrackForest research photo. Useful for a smoke test, not building-specific validation.",
+    "source": "https://raw.githubusercontent.com/cuilimeng/CrackForest-dataset/master/image/001.jpg",
+    "license": "Non-commercial research only; see SOURCES.md",
+    "sha256": "a5f8b96500502002fe79efa35885397b75cea3d411b4c0ace552fff2ba8b66d9",
+    "width": 480,
+    "height": 320,
+    "demo_boxes": [],
+    "benchmark_group": "baseline"
+  },
+  {
+    "id": "cfd-003",
+    "name": "Road surface \u00b7 fine crack",
+    "file": "crackforest-003.jpg",
+    "kind": "Research photograph \u00b7 road surface",
+    "description": "CrackForest research photo. Useful for a smoke test, not building-specific validation.",
+    "source": "https://raw.githubusercontent.com/cuilimeng/CrackForest-dataset/master/image/003.jpg",
+    "license": "Non-commercial research only; see SOURCES.md",
+    "sha256": "8dd95ccba1f5b4c58bbbb312b4aea781146ac20adcab99564e077df5d0cd9125",
+    "width": 480,
+    "height": 320,
+    "demo_boxes": [],
+    "benchmark_group": "baseline"
+  },
+  {
+    "id": "synthetic-intact",
+    "name": "Unbroken surface \u00b7 control",
+    "file": "synthetic-intact.jpg",
+    "kind": "Synthetic control",
+    "description": "A generated texture with no drawn crack. Tests whether a model invents a defect.",
+    "source": "scripts/prepare_fixtures.py; seed 42",
+    "license": "Imarah.tech",
+    "demo_boxes": [],
+    "sha256": "1201eca2c9922bac6820f5d944f6e5d2f4e0dcc9b96578f3d3c4866973356957",
+    "benchmark_group": "baseline"
+  },
+  {
+    "id": "synthetic-crack",
+    "name": "Wall crack \u00b7 illustration",
+    "file": "synthetic-crack.jpg",
+    "kind": "Synthetic illustration",
+    "description": "A drawn crack used to explain the interface. This is not a real site photograph.",
+    "source": "scripts/prepare_fixtures.py; seed 42",
+    "license": "Imarah.tech",
+    "demo_boxes": [
+      {
+        "label": "Illustrative crack region",
+        "confidence": null,
+        "box": [
+          170,
+          14,
+          285,
+          375
+        ]
+      }
+    ],
+    "sha256": "a627fde5c667a69311c85d47fc5750cbaf538166a847cfd6fa67ea2aa85b4043",
+    "benchmark_group": "baseline"
+  },
+  {
+    "id": "commons-wall-03",
+    "name": "Interior wall \u00b7 field photograph",
+    "file": "commons-wall-03.jpg",
+    "kind": "Public photograph \u00b7 interior wall",
+    "description": "An interior wall photographed by Almanta. An exploratory building example, without an engineering assessment or ground-truth boxes.",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cracked_wall_03.jpg",
+    "license": "CC BY-SA 4.0",
+    "sha256": "860e7aeefde938e85e4c1966eb051d22449c6c1cbccdac53cd615fa9d0b12eb5",
+    "width": 4624,
+    "height": 2600,
+    "demo_boxes": [],
+    "benchmark_group": "building-photo",
+    "attribution": {
+      "author": "Almanta",
+      "title": "Cracked wall 03.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cracked_wall_03.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "The fixture is the unmodified original photograph."
+    }
+  }
+]

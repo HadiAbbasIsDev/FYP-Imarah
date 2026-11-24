@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 770" role="img">
+  <!--Use: project flow preview. Copyright (c) 2026 Imarah.tech. All rights reserved.-->
+  <title>Qwen on the shared VPS</title>
+  <rect width="1120" height="770" fill="#f8faf5" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#85947c" />
+    </marker>
+  </defs>
+  <text font-family="Arial, sans-serif" font-size="24" text-anchor="start" font-weight="bold" x="35" y="47" fill="#294837">Qwen on the shared VPS</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" x="35" y="77" fill="#6c7f60">The PC reaches a private image API through SSH. Model files and logs stay on the data disk.</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M315 192.5 L400 192.5" fill="none" stroke="#85947c" />
+  <rect x="308.7" y="173.5" width="97.60000000000001" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="357.5" y="185.5" fill="#6c7f60">photo + prompt</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M690 192.5 L790 192.5" fill="none" stroke="#85947c" />
+  <rect x="681.6" y="173.5" width="116.80000000000001" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="740.0" y="185.5" fill="#6c7f60">forward privately</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M932.5 245 L932.5 365" fill="none" stroke="#85947c" />
+  <rect x="883.7" y="286.0" width="97.60000000000001" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="932.5" y="298.0" fill="#6c7f60">vision request</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M932.5 480 L927.5 565" fill="none" stroke="#85947c" />
+  <rect x="871.6" y="503.5" width="116.80000000000001" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="930.0" y="515.5" fill="#6c7f60">read pinned model</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M932.5 480 L545.0 565" fill="none" stroke="#85947c" />
+  <rect x="702.75" y="503.5" width="72.0" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="738.75" y="515.5" fill="#6c7f60">run engine</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M932.5 245 L177.5 365" fill="none" stroke="#85947c" />
+  <rect x="477.4" y="286.0" width="155.20000000000002" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="555.0" y="298.0" fill="#6c7f60">through the same tunnel</text>
+  <path stroke-width="1.5" marker-end="url(#arrow)" d="M177.5 480 L177.5 565" fill="none" stroke="#85947c" />
+  <rect x="90.3" y="503.5" width="174.4" height="18" fill="#f8faf5" />
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="middle" font-weight="normal" x="177.5" y="515.5" fill="#6c7f60">future project integration</text>
+  <rect x="40" y="140" width="275" height="105" rx="8" fill="#ffffff" stroke="#7e8975" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="177.5" y="178.5" fill="#294837">Project PC</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="177.5" y="196.5" fill="#294837">Imarah VPS option / image client</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="177.5" y="214.5" fill="#294837">127.0.0.1:18084</text>
+  <rect x="400" y="140" width="290" height="105" rx="8" fill="#eaf0f3" stroke="#526c7a" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="545.0" y="178.5" fill="#294837">Authenticated SSH tunnel</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="545.0" y="196.5" fill="#294837">Encrypted connection to VPS</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="545.0" y="214.5" fill="#294837">Keep the PC terminal open</text>
+  <rect x="790" y="140" width="285" height="105" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="932.5" y="178.5" fill="#294837">Qwen image API</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="932.5" y="196.5" fill="#294837">VPS 127.0.0.1:18084</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="932.5" y="214.5" fill="#294837">Validate image; return raw text</text>
+  <rect x="40" y="365" width="275" height="115" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="177.5" y="408.5" fill="#294837">Response JSON</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="177.5" y="426.5" fill="#294837">Raw observation + model identity</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="177.5" y="444.5" fill="#294837">Actual settings and timings</text>
+  <rect x="790" y="365" width="285" height="115" rx="8" fill="#eaf2e3" stroke="#517248" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="932.5" y="408.5" fill="#294837">Dedicated Ollama engine</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="932.5" y="426.5" fill="#294837">VPS 127.0.0.1:11440</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="932.5" y="444.5" fill="#294837">One Qwen request at a time</text>
+  <rect x="400" y="565" width="290" height="115" rx="8" fill="#eaf0f3" stroke="#526c7a" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="545.0" y="608.5" fill="#294837">Root filesystem: /opt/aiml</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="545.0" y="626.5" fill="#294837">Versioned Ollama executable</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="545.0" y="644.5" fill="#294837">Separate Python environment</text>
+  <rect x="755" y="565" width="345" height="115" rx="8" fill="#eaf0f3" stroke="#526c7a" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="927.5" y="608.5" fill="#294837">Data disk: /sdb-disk/AIML-Models</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="927.5" y="626.5" fill="#294837">VLM-models / named Qwen folder</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="927.5" y="644.5" fill="#294837">Weights, scripts, logs, README</text>
+  <rect x="40" y="565" width="275" height="115" rx="8" fill="#fbf1df" stroke="#987844" />
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" x="177.5" y="608.5" fill="#294837">Separate project data</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="177.5" y="626.5" fill="#294837">/sdb-disk/projects/&lt;name&gt;</text>
+  <text font-family="Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" x="177.5" y="644.5" fill="#294837">SLMs folder reserved for later</text>
+  <text font-family="Arial, sans-serif" font-size="10" text-anchor="start" font-weight="normal" x="35" y="749" fill="#87947b">Imarah.tech · Phase 1 · September 2026 · Edit the paired .drawio file in diagrams.net</text>
+</svg>

@@ -1,0 +1,102 @@
+{
+  "description": "Non-secret setup inventory and complete file checksums for the dedicated Qwen VPS service.",
+  "observed_at_utc": "2026-09-20T17:22:14.013586+00:00",
+  "hostname": "OISOL-Sandbox",
+  "os": "Linux-5.15.0-88-generic-x86_64-with-glibc2.35",
+  "python": "3.10.12",
+  "gpu": "Tesla P100-PCIE-16GB, 550.127.08, 16384 MiB, 8779 MiB",
+  "runtime": {
+    "version": "0.20.0"
+  },
+  "installed_models": {
+    "models": [
+      {
+        "name": "qwen3-vl:4b-instruct",
+        "model": "qwen3-vl:4b-instruct",
+        "modified_at": "2026-09-20T17:10:59.744216786Z",
+        "size": 3295636231,
+        "digest": "ee4b975b58c17ce268cd19d40db35d5edc64603035d2ffc1fee1968eb0947f7b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3vl",
+          "families": [
+            "qwen3vl"
+          ],
+          "parameter_size": "4.4B",
+          "quantization_level": "Q4_K_M"
+        }
+      }
+    ]
+  },
+  "runtime_archive": {
+    "file": "/sdb-disk/AIML-Models/_downloads/ollama-linux-amd64-0.20.0.tar.zst",
+    "sha256": "60865e897ebd0f1fd481df2428fbbaf708e776b7926a3a24a1bb5bd0dd83d546",
+    "bytes": 2035941986,
+    "verified": true
+  },
+  "layers": [
+    {
+      "filename": "sha256-16b83be682148a4d8201dbf720ea7eace5de98b69f63f05e0c908b4d7977ecb5",
+      "bytes": 3295612928,
+      "sha256": "16b83be682148a4d8201dbf720ea7eace5de98b69f63f05e0c908b4d7977ecb5",
+      "verified": true
+    },
+    {
+      "filename": "sha256-1b50ee65d6560b990272302c6df3026990f58d355bc400a66e4337c60e898876",
+      "bytes": 551,
+      "sha256": "1b50ee65d6560b990272302c6df3026990f58d355bc400a66e4337c60e898876",
+      "verified": true
+    },
+    {
+      "filename": "sha256-7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2",
+      "bytes": 11355,
+      "sha256": "7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2",
+      "verified": true
+    },
+    {
+      "filename": "sha256-f6417cb1e26962991f8e875a93f3cb0f92bc9b4955e004881251ccbf934a19d2",
+      "bytes": 42,
+      "sha256": "f6417cb1e26962991f8e875a93f3cb0f92bc9b4955e004881251ccbf934a19d2",
+      "verified": true
+    }
+  ],
+  "disks": {
+    "/": {
+      "total_bytes": 234239250432,
+      "used_bytes": 10011090944,
+      "free_bytes": 214598975488
+    },
+    "/sdb-disk": {
+      "total_bytes": 983349346304,
+      "used_bytes": 5331849216,
+      "free_bytes": 927990566912
+    }
+  },
+  "services": {
+    "aiml-qwen4-api": [
+      "CPUQuotaPerSecUSec=2s",
+      "MemoryMax=1073741824",
+      "ActiveState=active",
+      "UnitFileState=enabled"
+    ],
+    "aiml-qwen4-ollama": [
+      "CPUQuotaPerSecUSec=8s",
+      "MemoryMax=25769803776",
+      "ActiveState=active",
+      "UnitFileState=enabled"
+    ]
+  },
+  "listeners": [
+    "LISTEN 0      4096       127.0.0.1:11440 0.0.0.0:*",
+    "LISTEN 0      4096   127.0.0.53%lo:53    0.0.0.0:*",
+    "LISTEN 0      128          0.0.0.0:22    0.0.0.0:*",
+    "LISTEN 0      4096       127.0.0.1:35773 0.0.0.0:*",
+    "LISTEN 0      4096       127.0.0.1:42817 0.0.0.0:*",
+    "LISTEN 0      2048       127.0.0.1:18084 0.0.0.0:*",
+    "LISTEN 0      4096               *:9835        *:*",
+    "LISTEN 0      128             [::]:22       [::]:*"
+  ],
+  "reboot_tested": false,
+  "service_restart_tested": true
+}

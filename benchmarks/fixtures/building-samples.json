@@ -1,0 +1,24 @@
+[
+  {
+    "id": "commons-wall-03",
+    "name": "Interior wall \u00b7 field photograph",
+    "file": "commons-wall-03.jpg",
+    "kind": "Public photograph \u00b7 interior wall",
+    "description": "An interior wall photographed by Almanta. An exploratory building example, without an engineering assessment or ground-truth boxes.",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cracked_wall_03.jpg",
+    "license": "CC BY-SA 4.0",
+    "sha256": "860e7aeefde938e85e4c1966eb051d22449c6c1cbccdac53cd615fa9d0b12eb5",
+    "width": 4624,
+    "height": 2600,
+    "demo_boxes": [],
+    "benchmark_group": "building-photo",
+    "attribution": {
+      "author": "Almanta",
+      "title": "Cracked wall 03.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cracked_wall_03.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "The fixture is the unmodified original photograph."
+    }
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "label":"Simulated site data · no live devices or worker tracking",
+  "site":{"name":"Gulshan Residence","location":"Gulshan-e-Iqbal, Karachi","stage":"Ground floor slab","progress":42,"contractor":"Crescent Builders (fictional)","budget_recorded":2450000,"insurance":"Policy record pending verification"},
+  "workers":[
+    {"id":"W-001","name":"Ali Raza","role":"Mason","attendance":"Present","check_in":"08:02","helmet":true,"vest":true,"task":"Blockwork · east wing","progress":75,"payroll":28000,"insurance":"Recorded"},
+    {"id":"W-002","name":"Usman Ahmed","role":"Electrician","attendance":"Present","check_in":"08:14","helmet":true,"vest":false,"task":"Conduit installation","progress":60,"payroll":32000,"insurance":"Recorded"},
+    {"id":"W-003","name":"Bilal Khan","role":"Steel fixer","attendance":"Present","check_in":"07:55","helmet":true,"vest":true,"task":"Slab reinforcement","progress":85,"payroll":30000,"insurance":"Pending"},
+    {"id":"W-004","name":"Danish Iqbal","role":"Carpenter","attendance":"Absent","check_in":"—","helmet":null,"vest":null,"task":"Formwork inspection","progress":35,"payroll":26000,"insurance":"Recorded"},
+    {"id":"W-005","name":"Hamza Noor","role":"Site assistant","attendance":"Present","check_in":"08:20","helmet":false,"vest":true,"task":"Material receiving","progress":50,"payroll":22000,"insurance":"Pending"}
+  ],
+  "materials":[{"name":"Cement","unit":"bags","received":240,"used":172},{"name":"Reinforcement steel","unit":"tonnes","received":8,"used":5.6},{"name":"Concrete blocks","unit":"units","received":6000,"used":3850}],
+  "sensors":[
+    {"name":"Temperature","value":33.4,"unit":"°C","trend":[29,29.5,30,31.1,32.8,34.2,35,34.7,34.1,33.4],"note":"Temperature changes may affect expansion. A trend alone cannot establish damage.","icon":"temperature"},
+    {"name":"Relative humidity","value":68,"unit":"%","trend":[76,74,71,69,65,62,61,64,66,68],"note":"Persistent moisture can inform a follow-up inspection when combined with material and site evidence.","icon":"humidity"},
+    {"name":"Vibration","value":0.12,"unit":"g","trend":[0.08,0.1,0.09,0.18,0.12,0.16,0.08,0.11,0.1,0.12],"note":"This is a made-up accelerometer reading, not a calibrated damage threshold.","icon":"activity"},
+    {"name":"Tilt","value":0.3,"unit":"°","trend":[0.2,0.2,0.3,0.2,0.3,0.3,0.2,0.3,0.3,0.3],"note":"Tilt requires a calibrated reference and stable installation before changes can be interpreted.","icon":"tilt"}
+  ],
+  "areas":[{"name":"Gulshan-e-Iqbal","buildings":1240,"coverage":64,"green_space":14,"note":"A sample of how density and green cover could be presented."},{"name":"Saddar","buildings":1830,"coverage":78,"green_space":7,"note":"Illustrative dense urban area; no satellite imagery was processed."},{"name":"Clifton","buildings":920,"coverage":48,"green_space":23,"note":"Illustrative mixed-density area; these are not measured statistics."}],
+  "roadmap":[
+    {"number":"01","name":"Foundation & proposal demo","period":"September 2026","status":"Current phase","owner":"Whole team","items":["Read proposal and define scope","Responsive PWA and inspection journey","Run small local VLM comparisons","Architecture, requirements and evaluation notes"]},
+    {"number":"02","name":"Building health assessment","period":"October–December 2026","status":"Next","owner":"Hadi · AI / Ayaan · PWA / Saad · data & VLM","items":["Integrate and evaluate trained crack detector","Collect building-specific evaluation images","Compare shortlisted 2B and 4B VLMs","Complete reporting, review and FYP-I evaluation"]},
+    {"number":"03","name":"Construction site management","period":"January–February 2027","status":"Planned","owner":"Whole team","items":["Worker, contractor and insurance records","Attendance and PPE model validation","Payroll records and material tracking","Progress reports and module integration"]},
+    {"number":"04","name":"Building monitoring & climate","period":"March–April 2027","status":"Planned","owner":"Saad · sensors / Hadi · analysis / Ayaan · dashboard","items":["Small IoT hardware prototype and calibration","Time-stamped environmental readings","Weather integration and cautious trend analysis","Monitoring dashboard and integration tests"]},
+    {"number":"05","name":"Urban analysis & final evaluation","period":"April–May 2027","status":"Planned","owner":"Whole team","items":["Map-based area selection and satellite processing","Building density and risk-method validation","System-wide evaluation and final documentation","FYP-II defense and open house"]}
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-09-20T08:20:50.091337+00:00",
+  "checks": [
+    "Desktop route: Overview",
+    "Desktop route: Inspections",
+    "Desktop route: New inspection",
+    "Desktop route: Model lab",
+    "Desktop route: Site management",
+    "Desktop route: Monitoring",
+    "Desktop route: Urban analysis",
+    "Desktop route: Roadmap",
+    "Benchmark image sets keep the original comparison and new wall photo separate",
+    "Four installed models respect the three-model comparison limit",
+    "Public wall sample shows its photographer, source and licence",
+    "Workforce filter, assessment, materials and records",
+    "Sensor selection changes the displayed trend",
+    "Schematic area selection changes the example indicators",
+    "All eight routes fit a 390px viewport",
+    "All eight routes fit a 768px viewport",
+    "Mobile navigation drawer opens, navigates and closes",
+    "PWA manifest and offline shell; offline API errors remain visible"
+  ],
+  "console_errors": [],
+  "accessibility": [
+    {
+      "route": "/",
+      "violations": []
+    },
+    {
+      "route": "/inspections",
+      "violations": []
+    },
+    {
+      "route": "/inspections/new",
+      "violations": []
+    },
+    {
+      "route": "/models",
+      "violations": []
+    },
+    {
+      "route": "/site",
+      "violations": []
+    },
+    {
+      "route": "/monitoring",
+      "violations": []
+    },
+    {
+      "route": "/urban",
+      "violations": []
+    },
+    {
+      "route": "/roadmap",
+      "violations": []
+    }
+  ],
+  "live": false,
+  "model_id": null,
+  "accessibility_violation_count": 0
+}

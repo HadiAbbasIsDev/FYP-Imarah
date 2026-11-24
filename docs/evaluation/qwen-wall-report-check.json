@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-09-19T20:38:28.186114+00:00",
+  "inspection_id": "74fdaf7ed0e94b69",
+  "model_id": "qwen3-vl-4b",
+  "status": "complete",
+  "worker_time_ms": 167317,
+  "review_status": "pending",
+  "detector_boxes": 0,
+  "export_and_pdf_preserve_photo_credit": true,
+  "unique_accessible_model_checkbox_names": 4,
+  "accessibility_violations": 0,
+  "console_errors": [],
+  "result": "passed",
+  "empty_region_label_and_toggle_correct": true,
+  "synthetic_region_toggle_works": true,
+  "wall_and_synthetic_reports_fit_390px": true,
+  "source_note_correction_only": true
+}

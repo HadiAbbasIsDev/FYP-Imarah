@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-09-19T20:51:40.337896+00:00",
+  "purpose": "Connectivity and request-contract verification of the supplied Ultralytics deployment; no authenticated inference yet.",
+  "base_url": "https://predict-6aae986000b252409d0eaa84-dproatj77a-uc.a.run.app",
+  "checks": [
+    {
+      "method": "GET",
+      "route": "/health",
+      "status_code": 200,
+      "body": {
+        "status": "healthy",
+        "cached_models": 1
+      }
+    },
+    {
+      "method": "GET",
+      "route": "/openapi.json",
+      "status_code": 200,
+      "saved_spec_sha256": "89c5ced6defd6f8ad076d6b455299ad7b9a5f1d05b706251aad5a74aec13730c"
+    },
+    {
+      "method": "POST",
+      "route": "/predict",
+      "status_code": 401,
+      "authentication": "none",
+      "uploaded_image": false,
+      "response_error": "Unauthorized"
+    }
+  ],
+  "adapter": {
+    "provider": "ultralytics",
+    "auth_header": "Authorization: Bearer <deployment-key>",
+    "form": {
+      "imgsz": 640,
+      "conf": 0.25,
+      "iou": 0.7,
+      "normalize": false
+    },
+    "file_field": "file",
+    "model_id_required": false
+  },
+  "verification": {
+    "backend_tests_passed": 69,
+    "ruff": "passed",
+    "frontend_build": "passed",
+    "browser_checks_passed": 18,
+    "browser_console_errors": 0,
+    "accessibility_violations": 0
+  },
+  "local_env_ignored": true,
+  "authenticated_prediction_verified": false,
+  "remaining": "Add the deployment-bound key to local .env, restart, and verify a real image prediction, class names and output type."
+}

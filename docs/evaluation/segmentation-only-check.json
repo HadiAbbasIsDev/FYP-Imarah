@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-09-20T18:03:27.795926+00:00",
+  "purpose": "Regression check: inspection overlays must display segmentation only.",
+  "inspection_ids": [
+    "65fd1518c0884abd",
+    "aaeb766253374893",
+    "7a56510aacdb4e18"
+  ],
+  "checks": [
+    "Latest live reports draw exact saved polygons with no boxes or box selector.",
+    "Updated service worker removes the old app-shell cache.",
+    "Hide/show toggles segmentation without introducing rectangles.",
+    "Export preserves the original detector evidence and report.",
+    "Report has no violations in the selected accessibility rules.",
+    "Print and mobile views retain aligned polygons without rectangles.",
+    "Browser-only legacy fixture never falls back to rectangles.",
+    "Browser-only mixed fixture never falls back to rectangles.",
+    "Browser-only empty fixture never falls back to rectangles.",
+    "Browser-only demo fixture never falls back to rectangles."
+  ],
+  "console_errors": [],
+  "accessibility_violations": 0,
+  "fixtures_write_to_database": false
+}

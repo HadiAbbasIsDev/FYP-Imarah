@@ -1,0 +1,205 @@
+{
+  "verified_at": "2026-09-19T19:42:05.704470+00:00",
+  "local_date": "20 September 2026 \u00b7 Asia/Karachi",
+  "runtime": {
+    "version": "0.34.2",
+    "official_archive_sha256": "e155b83589986d2c581fdbf1381ea3ebdb16549883679cd5a0627f7cdc05b12b",
+    "binary_sha256": "ca9f4d3b7538196fab8bad3842bff3aa1352a80bfaaf95391ef7dda28880928b",
+    "installation": "Project-local CPU runtime; existing system Ollama was left unchanged",
+    "url": "http://127.0.0.1:11435",
+    "model_store": "models/ollama",
+    "parallel_requests": 1,
+    "maximum_loaded_models": 1,
+    "cloud_disabled": true
+  },
+  "models": [
+    {
+      "id": "qwen3-vl-2b",
+      "tag": "qwen3-vl:2b-instruct",
+      "manifest_digest": "ea422f1e73652a95479954d8572d3c8c6022f628ce2d38a1a04aae1b7f2d5300",
+      "download_bytes": 1889519783,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3vl",
+        "families": [
+          "qwen3vl"
+        ],
+        "parameter_size": "2.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2048
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "tools"
+      ],
+      "model_info": {
+        "general.architecture": "qwen3vl",
+        "general.file_type": 15,
+        "general.parameter_count": 2127532032,
+        "general.quantization_version": 2,
+        "qwen3vl.attention.head_count": 16,
+        "qwen3vl.attention.head_count_kv": 8,
+        "qwen3vl.attention.key_length": 128,
+        "qwen3vl.attention.layer_norm_rms_epsilon": 1e-06,
+        "qwen3vl.attention.value_length": 128,
+        "qwen3vl.block_count": 28,
+        "qwen3vl.context_length": 262144,
+        "qwen3vl.embedding_length": 2048,
+        "qwen3vl.feed_forward_length": 6144,
+        "qwen3vl.rope.freq_base": 5000000,
+        "qwen3vl.vision.attention.head_count": 16,
+        "qwen3vl.vision.attention.layer_norm_epsilon": 1e-06,
+        "qwen3vl.vision.block_count": 24,
+        "qwen3vl.vision.deepstack_visual_indexes": [
+          5,
+          11,
+          17
+        ],
+        "qwen3vl.vision.embedding_length": 1024,
+        "qwen3vl.vision.image_mean": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "qwen3vl.vision.image_std": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "qwen3vl.vision.longest_edge": 16777216,
+        "qwen3vl.vision.num_channels": 3,
+        "qwen3vl.vision.patch_size": 16,
+        "qwen3vl.vision.rope.freq_base": 10000,
+        "qwen3vl.vision.shortest_edge": 65536,
+        "qwen3vl.vision.spatial_merge_size": 2,
+        "qwen3vl.vision.temporal_patch_size": 2
+      },
+      "manifest_layers": [
+        {
+          "mediaType": "application/vnd.ollama.image.model",
+          "digest": "sha256:aafed9e48b157ae913cee994e0d9ac927af51e256feafbd923bf2852e8856d00",
+          "size": 1889496480
+        },
+        {
+          "mediaType": "application/vnd.ollama.image.license",
+          "digest": "sha256:7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2",
+          "size": 11355,
+          "from": "qwen3-vl:2b-instruct-bf16"
+        },
+        {
+          "mediaType": "application/vnd.ollama.image.license",
+          "digest": "sha256:7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2",
+          "size": 11355
+        },
+        {
+          "mediaType": "application/vnd.ollama.image.params",
+          "digest": "sha256:f6417cb1e26962991f8e875a93f3cb0f92bc9b4955e004881251ccbf934a19d2",
+          "size": 42
+        }
+      ]
+    },
+    {
+      "id": "qwen3-vl-4b",
+      "tag": "qwen3-vl:4b-instruct",
+      "manifest_digest": "ee4b975b58c17ce268cd19d40db35d5edc64603035d2ffc1fee1968eb0947f7b",
+      "download_bytes": 3295636231,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen3vl",
+        "families": [
+          "qwen3vl"
+        ],
+        "parameter_size": "4.4B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 262144,
+        "embedding_length": 2560
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "tools"
+      ],
+      "model_info": {
+        "general.architecture": "qwen3vl",
+        "general.file_type": 15,
+        "general.parameter_count": 4437815808,
+        "general.quantization_version": 2,
+        "qwen3vl.attention.head_count": 32,
+        "qwen3vl.attention.head_count_kv": 8,
+        "qwen3vl.attention.key_length": 128,
+        "qwen3vl.attention.layer_norm_rms_epsilon": 1e-06,
+        "qwen3vl.attention.value_length": 128,
+        "qwen3vl.block_count": 36,
+        "qwen3vl.context_length": 262144,
+        "qwen3vl.embedding_length": 2560,
+        "qwen3vl.feed_forward_length": 9728,
+        "qwen3vl.rope.freq_base": 5000000,
+        "qwen3vl.vision.attention.head_count": 16,
+        "qwen3vl.vision.attention.layer_norm_epsilon": 1e-06,
+        "qwen3vl.vision.block_count": 24,
+        "qwen3vl.vision.deepstack_visual_indexes": [
+          5,
+          11,
+          17
+        ],
+        "qwen3vl.vision.embedding_length": 1024,
+        "qwen3vl.vision.image_mean": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "qwen3vl.vision.image_std": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "qwen3vl.vision.longest_edge": 16777216,
+        "qwen3vl.vision.num_channels": 3,
+        "qwen3vl.vision.patch_size": 16,
+        "qwen3vl.vision.rope.freq_base": 10000,
+        "qwen3vl.vision.shortest_edge": 65536,
+        "qwen3vl.vision.spatial_merge_size": 2,
+        "qwen3vl.vision.temporal_patch_size": 2
+      },
+      "manifest_layers": [
+        {
+          "mediaType": "application/vnd.ollama.image.model",
+          "digest": "sha256:16b83be682148a4d8201dbf720ea7eace5de98b69f63f05e0c908b4d7977ecb5",
+          "size": 3295612928
+        },
+        {
+          "mediaType": "application/vnd.ollama.image.license",
+          "digest": "sha256:7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2",
+          "size": 11355,
+          "from": "qwen3-vl:4b-instruct-bf16"
+        },
+        {
+          "mediaType": "application/vnd.ollama.image.license",
+          "digest": "sha256:7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2",
+          "size": 11355
+        },
+        {
+          "mediaType": "application/vnd.ollama.image.params",
+          "digest": "sha256:f6417cb1e26962991f8e875a93f3cb0f92bc9b4955e004881251ccbf934a19d2",
+          "size": 42
+        }
+      ]
+    }
+  ],
+  "verification": "The resumable downloader completed and a second invocation checked all existing complete layers by SHA-256. Both pinned manifests matched; no changed tags were accepted.",
+  "comparison_limits": [
+    "CPU-only Linux laptop; no GPU or other operating system was tested.",
+    "Quantization and vision preprocessing differ from the float32 SmolVLM baseline.",
+    "The Ollama API does not provide process peak RSS."
+  ],
+  "hardware": {
+    "cpu": "13th Gen Intel(R) Core(TM) i7-1355U",
+    "logical_cpus": 12,
+    "usable_system_memory_bytes": 33325780992,
+    "execution": "CPU only; four requested threads per inference; num_gpu=0 for Ollama"
+  }
+}

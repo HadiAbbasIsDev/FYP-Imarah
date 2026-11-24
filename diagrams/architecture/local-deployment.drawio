@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" agent="Imarah.tech" version="24.7.17">
+  <diagram id="architecture-local-deployment" name="Phase 1 — local deployment">
+    <mxGraphModel dx="1120" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1120" pageHeight="940" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Phase 1 — local deployment" style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontColor=#294837;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="18" width="1050" height="36" />
+        </mxCell>
+        <mxCell id="subtitle" value="One job at a time. Local workers load fresh; the separate Qwen VPS choice uses the SSH tunnel." style="text;html=0;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#294837;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="58" width="1050" height="35" />
+        </mxCell>
+        <mxCell id="browser" value="Browser / installed PWA&#10;http://127.0.0.1:8000" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#7e8975;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="140" width="260" height="95" />
+        </mxCell>
+        <mxCell id="server" value="Python API server&#10;frontend/dist and /api" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="400" y="140" width="300" height="95" />
+        </mxCell>
+        <mxCell id="queue" value="One background thread&#10;Inspections and benchmarks" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="780" y="140" width="295" height="95" />
+        </mxCell>
+        <mxCell id="cache" value="Browser service worker&#10;App shell only&#10;No API or photograph cache" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf0f3;strokeColor=#526c7a;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="345" width="260" height="105" />
+        </mxCell>
+        <mxCell id="worker" value="Local Python worker&#10;Read image; return raw output&#10;300-second default timeout" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="745" y="345" width="330" height="105" />
+        </mxCell>
+        <mxCell id="remote" value="Qwen 4B · VPS option&#10;Image API through SSH&#10;127.0.0.1:18084&#10;No local fallback" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="400" y="340" width="290" height="115" />
+        </mxCell>
+        <mxCell id="smol" value="SmolVLM / Transformers&#10;CPU · float32 · 4 threads&#10;Loads inside the worker" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="430" y="545" width="290" height="110" />
+        </mxCell>
+        <mxCell id="ollama" value="Project-local Ollama&#10;127.0.0.1:11435&#10;Qwen · CPU · quantized&#10;Unload after every request" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf2e3;strokeColor=#517248;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="775" y="545" width="300" height="115" />
+        </mxCell>
+        <mxCell id="disk" value="Project disk&#10;models/ · data/ · benchmarks/results/&#10;No downloads during inference" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#eaf0f3;strokeColor=#526c7a;fontColor=#294837;fontSize=13;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="390" y="765" width="410" height="100" />
+        </mxCell>
+        <mxCell id="edge-0" value="same origin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="browser" target="server">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-1" value="submit job" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="server" target="queue">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-2" value="Local option" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="queue" target="worker">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-3" value="VPS option" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="queue" target="remote">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-4" value="local adapter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="worker" target="smol">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-5" value="streaming HTTP" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="worker" target="ollama">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-6" value="read weights" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="smol" target="disk">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-7" value="read GGUF weights" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="ollama" target="disk">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-8" value="offline shell" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#85947c;fontColor=#66785c;fontSize=11;labelBackgroundColor=#f8faf5;" edge="1" parent="1" source="browser" target="cache">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,8 @@
+# Use: install the tested local API dependencies in a Python virtual environment.
+# Copyright (c) 2026 Imarah.tech. All rights reserved.
+fastapi==0.141.1
+uvicorn==0.53.0
+httpx==0.28.1
+pydantic==2.13.5
+Pillow==12.3.0
+python-multipart==0.0.32
